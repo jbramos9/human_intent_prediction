@@ -11,9 +11,15 @@ Since, the training and testing framework are very similar to all the different 
 - and the `modified_detr_head` version the multi-stream model that requires another head detector model for the head input
 ## Train
 Before proceeding to training, please make sure that `config.yaml` is properly configured. To train simply run
-```trainer.py```
+```
+trainer.py
+```
 ## Testing
 Same with training, please make sure that `config.yaml` is properly configured. In addiition, please also change the checkpoint file in the following line
-```model = LITGaMer.load_from_checkpoint("checkpoints/with_head_pretrained.ckpt")```
+```
+model = LITGaMer.load_from_checkpoint("checkpoints/with_head_pretrained.ckpt")
+```
 To test simply run
-```test.py```
+```
+test.py
+```
