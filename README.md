@@ -3,6 +3,7 @@ This repo contains all the models (including the variant) developed in the proje
 - The Gazed Object Detector is in the `gazed_object_detectors` which contains the three different variations of the model.
 - The Intent Classifier is in the `intent_classifier` folder.
 - The Overall System **for inference** is in the `multi-stage_human_intent_classifier_system` folder.
+
 Each folder have their own readme.md for guidance.
 
 # Dataset
