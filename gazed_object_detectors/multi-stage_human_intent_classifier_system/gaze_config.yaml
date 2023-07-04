@@ -1,0 +1,69 @@
+directories:
+  root: /home/joshua/DATASET
+  vid_dir: /home/joshua/DATASET
+  depth_dir: /home/joshua/DATASET
+  chk_dir: checkpoints
+  chk_path: checkpoints/with_head_v2.ckpt
+
+# Training settings
+accelerator: "gpu"
+num_gpus: 2
+strategy: "ddp"
+max_epoch: 100
+resume: False
+precision: 16-mixed
+
+# Data
+batch_size: 2
+num_workers: 16
+
+# Run Config
+use_wandb: False
+project_name: GazeTargetV2
+run_name: with_head
+test: False
+
+num_classes: 16
+num_actions: 2
+num_queries: 20
+
+model:
+  aux_loss: True # set True for best results, False for eval
+  position_encoder: sine
+  clip_max_norm: 0.1
+
+  backbone:
+    name: resnet50
+    lr: 0.00001
+    dilation: False
+
+  transformer:
+    d_model: 256 # hidden_dim
+    nheads: 8
+    num_encoder_layers: 6
+    num_decoder_layers: 6
+    dim_feedforward: 2048
+    dropout: 0.3
+    activation: relu
+    normalize_before: False
+    return_intermediate_dec: True
+
+optimizer:
+  lr: 0.00001
+  weight_decay: 0.0001
+  scheduler:
+    lr_drop: 70
+
+matcher:
+  cost_object: 1
+  cost_isgaze: 3
+  cost_bbox: 5
+  cost_giou: 2
+
+loss_coefs:
+  class_loss_coef: 1
+  isgazed_loss_coef: 3
+  bbox_loss_coef: 5
+  giou_loss_coef: 2
+  eos_coef: 0.02
+
