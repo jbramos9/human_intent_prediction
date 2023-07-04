@@ -4,7 +4,7 @@ This repo contains all the models (including the variant) developed in the proje
 - The Intent Classifier is in the `intent_classifier` folder.
 - The Overall System **for inference** is in the `multi-stage_human_intent_classifier_system` folder.
 
-Each folder has their own `readme.md` for guidance.
+Each folder has its own `readme.md` for guidance.
 
 # Dataset
 The dataset that was used in this project can be accessed [here](https://drive.google.com/drive/folders/1L4mau-UvI51qa2JSlboCKberItyMLiIl?usp=sharing). The generators and statistics for the train-test split are in the `split` folder.
