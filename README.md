@@ -2,6 +2,7 @@
 This repo contains all the models (including the variant) developed in the project [Multi-Stage Hybrid-CNN Transformer Model for Human Intent-Prediction](https://drive.google.com/file/d/1tVHbOet_5-99KdBAT0jSuujO2GBRi-nq/view?usp=sharing). As an overview, the Multi-Stage Hybrid-CNN Transformer Classifier System is composed of two key components: the Gazed Object Detector and the Intent Classifier.
 - The Gazed Object Detector is in the `gazed_object_detectors` which contains the three different variations of the model.
 - The Intent Classifier is in the `intent_classifier` folder.
+- Additionally, the overall system for inference is in the `multi-stage_human_intent_classifier_system` folder.
 
 # Dataset
 The dataset that was used in this project can be accessed [here](https://drive.google.com/drive/folders/1L4mau-UvI51qa2JSlboCKberItyMLiIl?usp=sharing). The generators and statistics for the train-test split are in the `split` folder.
