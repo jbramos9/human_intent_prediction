@@ -1,0 +1,41 @@
+# Paths
+data_dir: hiphop
+chk_dir: checkpoints
+
+# Training settings
+max_epoch: 50
+batch_size: 5
+num_workers: 0
+data_augmentation:
+  RandomShift: 0.5
+  RandomBlanks: 0.5
+  RandomShift: 0.5
+
+# Run Config
+use_wandb: True
+project_name: IntentClassifier
+run_name: new_dataset
+no_test: False
+
+# Model Config
+model_name: InFormer
+input_size: 250
+src_vocab: 16
+num_classes: 8
+
+loss: CrossEntropyLoss
+optimizer:
+  name: SGD
+  momentum: 0.9
+lr: 0.001
+
+scheduler:
+  lr_scheduler: null
+  lr_decay_steps: 20
+  lr_decay_rate: 0.5
+  lr_decay_min_lr: 0.0001
+
+num_heads: 10
+depth: 6
+d_ff: 512
+dropout: 0.1
