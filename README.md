@@ -4,7 +4,10 @@ This repo contains all the models (including the variant) developed in the proje
 - The Intent Classifier is in the `intent_classifier` folder.
 - Additionally, the overall system for inference is in the `multi-stage_human_intent_classifier_system` folder. To learn more about each model, each folder contains its own readme.md for guidance.
 
-### Recommendations
+# Dataset
+The dataset that was used in this project can be accessed [here]().
+
+# Recommendations
 1. Add more video samples such that the gaze distribution is balanced ("None" or not looking at objects is currently overrepresented)
 2. Develop the weights of the Gaze Object Detector from scratch to tailor the model for object-gaze classification
 3. Consider the probability of gaze for all objects in a given frame, instead of the most probable gaze, as input to the human intent classifier
