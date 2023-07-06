@@ -1,7 +1,8 @@
 # Gazed Object Detector
-This different versions of the gazed object detector. Each folder contains all the files needed for training and testing the model.
+This folder contains the different versions of the gazed object detector. Each folder contains all the files needed for training and testing that specific model.
+
 -----
-**_NOTE:_** Since very large files are not yet uploaded in this repo. Please download these folders for the meantime in this [link](). These folders should be inside each folder of the variation.
+### **_NOTE:_** Since very large files are not yet uploaded in this repo. Please download these folders for the meantime in this [link](). These folders should be inside each folder of the variation.
 - `data` which should contain the pretrained_weights, the gaze_dataset json files.
 - `checkpoints` which should contain all the trained weights in the model
 -----
