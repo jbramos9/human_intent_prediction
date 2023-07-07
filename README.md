@@ -14,3 +14,6 @@ The dataset that was used in this project can be accessed [here](https://drive.g
 2. Develop the weights of the Gaze Object Detector from scratch to tailor the model for object-gaze classification
 3. Consider the probability of gaze for all objects in a given frame, instead of the most probable gaze, as input to the human intent classifier
 4. Explore other human pose estimation techniques (as inspired by the increase in performance from the additional head information used)
+
+# Acknowledgement
+We are extremely grateful to the work of [DETR](https://github.com/facebookresearch/detr) and [MGTR](https://github.com/csguoh/MGTR), where the gazed object detector was heavily based from.
